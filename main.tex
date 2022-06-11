@@ -6,8 +6,19 @@
 \usepackage{minted}
 \usepackage[localise]{xepersian}
 
-\setlatintextfont{Roboto}
-\settextfont{Vazirmatn}
+\settextfont[
+  Path = fonts/,
+  UprightFont = *-Regular,
+  BoldFont = *-Bold,
+  ItalicFont = *-Variable
+]{Vazir}
+
+\setlatintextfont[
+  Path = fonts/,
+  UprightFont = *-Regular,
+  BoldFont = *-Bold,
+  ItalicFont = *-Italic
+]{Neuton}
 
 \definecolor{نارنجی}{rgb}{1.0, 0.31, 0.0}
 
