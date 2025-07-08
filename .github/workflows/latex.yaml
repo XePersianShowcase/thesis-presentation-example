@@ -11,8 +11,10 @@ jobs:
         uses: xu-cheng/latex-action@v4
         with:
           latexmk_use_xelatex: true
+          latexmk_shell_escape: true
           working_directory: .
           root_file: main.tex
+          texlive_version: latest
           pre_compile: tlmgr update --self && tlmgr update --all
       - name: release
         uses: ncipollo/release-action@v1
